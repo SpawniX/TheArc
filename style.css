@@ -151,3 +151,40 @@ a:hover {
     width: 100%;
   }
 }
+
+.alert-box {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.alert-table {
+  padding: .3em;
+  border-radius: 10px;
+  background: rgba(255,255,255,.85);
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+.alert-table td {
+  padding: 8px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.alert-img img {
+  width: 60px;
+  border-radius: 6px;
+}
+
+.alert-title {
+  font-size: 2.2em;
+}
+
+.alert-desc {
+  font-size: 1.2em;
+}
+
+.alert-big {
+  font-size: 1.6em;
+}
+
