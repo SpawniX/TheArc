@@ -57,3 +57,77 @@
     a:hover {
       text-decoration: underline;
     }
+    .glass-card {
+      width: 300px;
+      background: rgba(255, 255, 255, 0.35);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.4);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      overflow: hidden;
+      font-size: 14px;
+    }
+    
+    /* Header */
+    .glass-header {
+      padding: 10px 14px;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    .glass-header h2 {
+      font-size: 16px;
+      margin: 0 0 6px;
+    }
+    
+    .tabs a {
+      font-size: 12px;
+      margin-right: 10px;
+      color: #1a4fa3;
+      text-decoration: none;
+    }
+    
+    .tabs a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Image */
+    .glass-image {
+      text-align: center;
+      padding: 10px;
+    }
+    
+    .glass-image img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    
+    /* Section title */
+    .glass-section {
+      padding: 8px 14px;
+      background: rgba(255,255,255,0.4);
+      font-weight: 600;
+      text-align: center;
+    }
+    
+    /* Info table */
+    .glass-info {
+      padding: 10px 14px;
+    }
+    
+    .glass-info .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    
+    .glass-info .label {
+      font-weight: 600;
+      color: #1f2d3d;
+    }
+    
+    .glass-info .value {
+      text-align: right;
+      color: #2b3f66;
+    }
+
