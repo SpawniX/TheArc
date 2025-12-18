@@ -58,7 +58,7 @@
       text-decoration: underline;
     }
     .glass-card {
-      width: 600px;
+      width: 300px;
       background: rgba(255, 255, 255, 0.35);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
