@@ -1,179 +1,134 @@
- body {
-      background-color: #00000;
-      background-image: url("https://i.redd.it/dr1hv3peccv91.jpg");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
+body {
+  background-color: #000000;
+  background-image: url("https://i.redd.it/dr1hv3peccv91.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 
-      font-family: 'Source Sans 3', sans-serif;
-      margin: 0;
-      padding: 40px;
-      color: #1f2d3d;
-    }
-
-    .embed-layout {
-      display: flex;
-      gap: 30px;
-      align-items: flex-start;
-    }
-    
-    .embed-left iframe {
-      border-radius: 12px;
-      border: none;
-    }
-    
-    .embed-right {
-      flex: 1;
-    }
-    
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: rgba(255,255,255,0.7);
-      padding: 30px;
-      border-radius: 12px;
-    }
-
-    .hero {
-      display: flex;
-      gap: 30px;
-      align-items: center;
-    }
-
-    .hero img {
-      width: 110px;
-      border-radius: 12px;
-    }
-
-    .hero-text {
-      flex: 1;
-    }
-
-    a {
-      color: #1a4fa3;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-    .glass-card {
-      width: 300px;
-      background: rgba(255, 255, 255, 0.35);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,0.4);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-      overflow: hidden;
-      font-size: 14px;
-      float: right;
-      margin: 0 0 20px 20px;
-    }
-
-    .card-right {
-      float: right;
-      margin: 0 0 20px 20px;
-    }
-    
-    .card-left {
-      float: left;
-      margin: 0 20px 20px 0;
-    }
-    
-    /* Header */
-    .glass-header {
-      padding: 10px 14px;
-      border-bottom: 1px solid rgba(0,0,0,0.1);
-    }
-    
-    .glass-header h2 {
-      font-size: 16px;
-      margin: 0 0 6px;
-    }
-    
-    .tabs a {
-      font-size: 12px;
-      margin-right: 10px;
-      color: #1a4fa3;
-      text-decoration: none;
-    }
-    
-    .tabs a:hover {
-      text-decoration: underline;
-    }
-    
-    /* Image */
-    .glass-image {
-      text-align: center;
-      padding: 10px;
-    }
-    
-    .glass-image img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-    
-    /* Section title */
-    .glass-section {
-      padding: 8px 14px;
-      background: rgba(255,255,255,0.4);
-      font-weight: 600;
-      text-align: center;
-    }
-    
-    /* Info table */
-    .glass-info {
-      padding: 10px 14px;
-    }
-    
-    .glass-info .row {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 6px;
-    }
-    
-    .glass-info .label {
-      font-weight: 600;
-      color: #1f2d3d;
-    }
-    
-    .glass-info .value {
-      text-align: right;
-      color: #2b3f66;
-    }
-
-    .text-left {
-      text-align: left;
-    }
-
-    .text-right {
-      text-align: right;
-    }
-
-    .page-layout {
-      display: flex;
-      align-items: flex-start;
-      gap: 30px;
-    }
-    
-    .page-text {
-      flex: 1;
-      min-width: 0;
-    }
-    
-    .glass-card {
-      flex-shrink: 0;
-    }
-    
-    /* mobile fix */
-    @media (max-width: 900px) {
-      .page-layout {
-        flex-direction: column;
-      }
-    
-      .glass-card {
-        width: 100%;
-      }
+  font-family: 'Source Sans 3', sans-serif;
+  margin: 0;
+  padding: 40px;
+  color: #1f2d3d;
 }
 
+/* CONTAINER */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: rgba(255,255,255,0.7);
+  padding: 30px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero img {
+  width: 110px;
+  border-radius: 12px;
+}
+
+/* MAIN LAYOUT */
+.page-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.page-text {
+  flex: 1;
+  min-width: 0;
+}
+
+/* LINKS */
+a {
+  color: #1a4fa3;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* GLASS CARD */
+.glass-card {
+  width: 300px;
+  background: rgba(255,255,255,0.35);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* CARD HEADER */
+.glass-header {
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.glass-header h2 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.tabs a {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+/* IMAGE */
+.glass-image {
+  padding: 10px;
+  text-align: center;
+}
+
+.glass-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* SECTION */
+.glass-section {
+  padding: 8px 14px;
+  background: rgba(255,255,255,0.4);
+  font-weight: 600;
+  text-align: center;
+}
+
+/* INFO */
+.glass-info {
+  padding: 10px 14px;
+}
+
+.glass-info .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.value {
+  text-align: right;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .page-layout {
+    flex-direction: column;
+  }
+
+  .glass-card {
+    width: 100%;
+  }
+}
