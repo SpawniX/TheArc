@@ -11,6 +11,11 @@
   <style>
     body {
       background-color: #cfe8ff;
+      background-image: url("background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+
       font-family: 'Source Sans 3', sans-serif;
       margin: 0;
       padding: 40px;
@@ -25,6 +30,21 @@
       border-radius: 12px;
     }
 
+    .hero {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .hero img {
+      width: 220px;
+      border-radius: 12px;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
     a {
       color: #1a4fa3;
       text-decoration: none;
@@ -35,21 +55,32 @@
     }
   </style>
 </head>
+
 <body>
 
-<div class="container">
-  <h1>The Archive Wiki</h1>
-  <p style="font-size: 24px;">
-  Welcome to the Archive wiki,or just The Arc,here we document about roblox exploiting and their branchs.
-  </p>
+  <div class="container">
 
-  <h2>Pages</h2>
-  <ul>
-    <li><a href="pages/getting-started.html">Getting Started</a></li>
-    <li><a href="pages/docs.html">Documentation</a></li>
-    <li><a href="pages/faq.html">FAQ</a></li>
-  </ul>
-</div>
+    <div class="hero">
+      <img src="logo.png" alt="TheArc Logo">
+
+      <div class="hero-text">
+        <h1>TheArc Wiki</h1>
+        <p>
+          Welcome to the official documentation and knowledge base for TheArc.
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <h2>Pages</h2>
+    <ul>
+      <li><a href="pages/getting-started.html">Getting Started</a></li>
+      <li><a href="pages/docs.html">Documentation</a></li>
+      <li><a href="pages/faq.html">FAQ</a></li>
+    </ul>
+
+  </div>
 
 </body>
 </html>
