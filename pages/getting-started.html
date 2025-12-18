@@ -1,22 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Getting Started – TheArc Wiki</title>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
+  <title>TheArc Wiki</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
-      background-color: #cfe8ff;
+      background-color: #00000;
+      background-image: url("https://i.redd.it/dr1hv3peccv91.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+
       font-family: 'Source Sans 3', sans-serif;
+      margin: 0;
       padding: 40px;
+      color: #1f2d3d;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255,255,255,0.7);
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .hero {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .hero img {
+      width: 110px;
+      border-radius: 12px;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    a {
+      color: #1a4fa3;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .search-box {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    
+    .search-box input {
+      flex: 1;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #aaa;
+      font-size: 16px;
+    }
+    
+    .search-box button {
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: none;
+      background: #9cc9ff;
+      cursor: pointer;
+    }
+    
+    .search-box button:hover {
+      background: #87b8f5;
+    }
+    
+    .error {
+      color: #c0392b;
+      margin-top: 8px;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
 
-<h1>Getting Started</h1>
-<p>Welcome to TheArc Wiki.</p>
+  <div class="container">
 
-<a href="../index.html">← Back to home</a>
+    <div class="hero">
+      <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/5X/0/6/2/8/062820492998c76f8c780ce67c30779ffd264c8f.png" alt="TheArc Logo">
+
+      <div class="hero-text">
+        <h1>Clientside</h1>
+        <p>
+          Welcome to the official documentation and knowledge base for TheArc.
+        </p>
+      </div>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search the wiki...">
+      <button onclick="searchWiki()">Search</button>
+      <div id="searchError" class="error"></div>
+    </div>
+
+    <hr>
+
+    <h2>Pages</h2>
+    <ul>
+      <li><a href="pages/getting-started.html">Getting Started</a></li>
+      <li><a href="pages/docs.html">Documentation</a></li>
+      <li><a href="pages/faq.html">FAQ</a></li>
+    </ul>
+
+  </div>
 
 </body>
 </html>
