@@ -54,37 +54,24 @@
       text-decoration: underline;
     }
 
-    .search-box {
-      display: flex;
-      gap: 10px;
-      margin: 20px 0;
+    .round-img {
+      width: 160px;          /* size */
+      height: 160px;
+      border-radius: 50%;    /* makes it round */
+      object-fit: cover;     /* crops nicely */
+      background: transparent;
     }
     
-    .search-box input {
-      flex: 1;
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #aaa;
-      font-size: 16px;
+    .round-img-sm {
+      width: 80px;
+      height: 80px;
     }
     
-    .search-box button {
-      padding: 10px 16px;
-      border-radius: 8px;
-      border: none;
-      background: #9cc9ff;
-      cursor: pointer;
+    .round-img-lg {
+      width: 220px;
+      height: 220px;
     }
-    
-    .search-box button:hover {
-      background: #87b8f5;
-    }
-    
-    .error {
-      color: #c0392b;
-      margin-top: 8px;
-      font-size: 14px;
-    }
+
   </style>
 </head>
 
@@ -102,12 +89,16 @@
         </p>
       </div>
     </div>
+    
+  <div class="hero">
+  <img src="avatar.png" class="round-img" alt="Avatar">
 
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Search the wiki...">
-      <button onclick="searchWiki()">Search</button>
-      <div id="searchError" class="error"></div>
+  <div class="hero-text">
+    <h1>TheArc Wiki</h1>
+    <p>Welcome to the documentation.</p>
     </div>
+  </div>
+
 
     <hr>
 
