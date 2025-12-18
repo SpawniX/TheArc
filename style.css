@@ -1,5 +1,6 @@
+/* PAGE BACKGROUND */
 body {
-  background: #0e1116;
+  background-color: #0e1116;
   background-image: url("https://i.redd.it/dr1hv3peccv91.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -8,19 +9,26 @@ body {
   font-family: 'Source Sans 3', sans-serif;
 }
 
+/* MAIN CONTAINER */
 .container {
   max-width: 1100px;
   margin: auto;
-  background: rgba(255,255,255,0.7);
-  border-radius: 16px;
   padding: 30px;
+  background: rgba(255,255,255,0.78);
+  border-radius: 16px;
+
+  /* IMPORTANT FIXES */
+  color: #1f2d3d;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
 }
 
-/* HERO */
+/* HEADER */
 .hero {
   display: flex;
   gap: 20px;
   align-items: flex-start;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .logo {
@@ -72,11 +80,12 @@ body {
   flex: 1;
 }
 
-/* GLASS CARD */
+/* GLASS INFO CARD */
 .glass-card {
   width: 300px;
   background: rgba(255,255,255,0.35);
   backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-radius: 16px;
   overflow: hidden;
   flex-shrink: 0;
@@ -111,6 +120,10 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 6px;
+}
+
+.label {
+  font-weight: 600;
 }
 
 /* LINKS */
