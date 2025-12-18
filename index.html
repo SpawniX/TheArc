@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
+    
     body {
       background-color: #00000;
       background-image: url("https://i.redd.it/dr1hv3peccv91.jpg");
@@ -22,6 +23,21 @@
       color: #1f2d3d;
     }
 
+    .embed-layout {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+    }
+    
+    .embed-left iframe {
+      border-radius: 12px;
+      border: none;
+    }
+    
+    .embed-right {
+      flex: 1;
+    }
+    
     .container {
       max-width: 900px;
       margin: auto;
@@ -106,7 +122,17 @@
         </p>
       </div>
     </div>
-<iframe src="https://discord.com/widget?id=1439049478899503196&theme=dark" width="350" height="500" style="float: left;" allowtransparency="true" frameborder="0" style="right" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+    <div class="embed-layout">
+      <div class="embed-left">
+        <iframe
+          src="https://discord.com/widget?id=YOUR_SERVER_ID&theme=light"
+          width="350"
+          height="500"
+          allowtransparency="true"
+          frameborder="0">
+        </iframe>
+    </div>
 
     <hr>
     <h2> Famous Pages </h2>
