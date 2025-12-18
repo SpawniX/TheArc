@@ -56,6 +56,42 @@
   </style>
 </head>
 
+<script>
+  const pages = {
+    "getting started": "pages/getting-started.html",
+    "docs": "pages/docs.html",
+    "documentation": "pages/docs.html",
+    "faq": "pages/faq.html"
+  };
+
+  function searchWiki() {
+    const input = document.getElementById("searchInput");
+    const error = document.getElementById("searchError");
+
+    const query = input.value.trim().toLowerCase();
+    error.textContent = "";
+
+    if (!query) {
+      error.textContent = "Please enter a search term.";
+      return;
+    }
+
+    if (pages[query]) {
+      window.location.href = pages[query];
+    } else {
+      error.textContent = "No page found for \"" + query + "\"";
+    }
+  }
+
+  // Allow Enter key
+  document.getElementById("searchInput").addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      searchWiki();
+    }
+  });
+</script>
+
+
 <body>
 
   <div class="container">
