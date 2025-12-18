@@ -80,6 +80,11 @@ body {
   flex: 1;
 }
 
+b.red    { color: #e74c3c; }
+b.blue   { color: #3498db; }
+b.green  { color: #2ecc71; }
+b.purple { color: #9b59b6; }
+
 /* GLASS INFO CARD */
 .glass-card {
   width: 300px;
