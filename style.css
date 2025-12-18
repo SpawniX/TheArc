@@ -24,13 +24,27 @@ body {
 /* HERO */
 .hero {
   display: flex;
-  align-items: center;
-  gap: 30px;
+  align-items: flex-start;
+  gap: 20px;
 }
 
-.hero img {
+/* LOGO NEVER MOVES */
+.hero .logo {
   width: 110px;
   border-radius: 12px;
+  flex-shrink: 0;
+}
+
+/* TITLE + SHARD STACK */
+.hero-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* TITLE */
+.hero-text h1 {
+  margin: 0;
+  line-height: 1.1;
 }
 
 /* MAIN LAYOUT */
