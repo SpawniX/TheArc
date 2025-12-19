@@ -219,10 +219,15 @@ a:hover {
   font-family: inherit;
 }
 
+.top-box {
+  margin-bottom: 16px;
+}
+
 .warning-box {
-  background: linear-gradient(#000, #111);
-  border: 3px solid #ff2a2a;
-  box-shadow: 0 0 15px rgba(255,0,0,.6);
+  background: #000;
+  border: 3px solid #ff0000;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255,0,0,0.6);
 }
 
 /* Layout */
