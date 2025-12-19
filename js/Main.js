@@ -1,4 +1,4 @@
-<script>
+document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("gy").forEach(gy => {
     const imgSrc = gy.getAttribute("img");
     const text = gy.innerHTML;
@@ -12,4 +12,4 @@
       </div>
     `;
   });
-</script>
+});
