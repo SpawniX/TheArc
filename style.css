@@ -288,30 +288,25 @@ a:hover {
 
 gy {
   display: inline-block;
-  width: 180px;
+}
+
+.gy-box {
+  width: 260px;
+  background: #fff;
   border: 1px solid #aaa;
-  background: #f8f8f8;
   padding: 6px;
-  font-family: Arial, sans-serif;
-  font-size: 12px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.gy-box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 6px;
+}
+
+.gy-caption {
   color: #000;
 }
 
-gy .gy-img {
-  width: 100%;
-  background: #2f61ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-gy .gy-img img {
-  width: 80%;
-  height: auto;
-}
-
-gy .gy-text {
-  margin-top: 6px;
-  text-align: left;
-  line-height: 1.2;
-}
