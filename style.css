@@ -210,3 +210,73 @@ a:hover {
 .rainbow {
   animation: rainbow 5s linear infinite;
 }
+
+.wiki-box {
+  max-width: 900px;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: inherit;
+}
+
+.warning-box {
+  background: linear-gradient(#000, #111);
+  border: 3px solid #ff2a2a;
+  box-shadow: 0 0 15px rgba(255,0,0,.6);
+}
+
+/* Layout */
+.box-content {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 14px;
+}
+
+.box-left img,
+.box-right img {
+  width: 60px;
+  height: auto;
+}
+
+.box-center {
+  flex: 1;
+  text-align: center;
+}
+
+/* Text */
+.box-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff3b3b;
+  margin-bottom: 6px;
+}
+
+.box-text {
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.4;
+}
+
+/* Meter */
+.box-meter {
+  position: relative;
+  background: #222;
+  height: 18px;
+  margin: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.box-meter-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00ff00, #ffff00, #ff0000);
+}
+
+.box-meter-text {
+  position: absolute;
+  right: 8px;
+  top: 1px;
+  font-size: 12px;
+  color: #fff;
+}
