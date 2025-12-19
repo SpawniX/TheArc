@@ -287,12 +287,13 @@ a:hover {
 }
 
 gy.gallery {
-  display: inline-block;       /* Treat like a block */
-  border: 1px solid #aaa;      /* Optional border */
+  display: inline-block;
+  float: right;       /* makes it always align to the right */
+  border: 1px solid #aaa;
   padding: 5px;
   background: #fff;
   text-align: center;
-  width: 250px;                /* Adjust as needed */
+  width: 250px;
   margin: 5px;
 }
 
