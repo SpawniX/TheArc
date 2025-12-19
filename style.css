@@ -286,27 +286,25 @@ a:hover {
   color: #fff;
 }
 
-gy {
-  display: inline-block;
-}
-
-.gy-box {
-  width: 260px;
+gy.gallery {
+  display: inline-block;       /* Treat like a block */
+  border: 1px solid #aaa;      /* Optional border */
+  padding: 5px;
   background: #fff;
-  border: 1px solid #aaa;
-  padding: 6px;
   text-align: center;
-  font-size: 13px;
+  width: 250px;                /* Adjust as needed */
+  margin: 5px;
 }
 
-.gy-box img {
-  max-width: 100%;
+gy.gallery img {
+  width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto 6px;
 }
 
-.gy-caption {
-  color: #000;
+gy.gallery .caption {
+  font-size: 14px;
+  margin-top: 4px;
+  color: #333;
 }
+
 
